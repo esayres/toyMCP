@@ -74,7 +74,7 @@ def index_clear_task(taskIdx: int) -> str:
     else:
         return "invalid index provided, please provide a valid index"
 
-def string_clear_task(task: str) -> str: # this function name is a bit awkward and uses two different naming conventions
+def string_clear_task(task: str) -> str:
     if task in tasks:
         tasks.remove(task)
         return "Task cleared by name"
