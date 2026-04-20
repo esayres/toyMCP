@@ -1,6 +1,6 @@
 # MCP Toy Server
 
-This is a simple Model Context Protocol (MCP) server built using FastMCP. It showscases basic tool creation, state management, and external API integration.
+This is a simple Model Context Protocol (MCP) server built using FastMCP. It showcases basic tool creation, state management, and external API integration.
 
 ## Features
 
@@ -34,19 +34,24 @@ This is a simple Model Context Protocol (MCP) server built using FastMCP. It sho
 * Runs locally using MCP over `stdio`
 * Reuses HTTP connections with a global `requests.Session`
 
-## Running the Server
-
-Make sure dependencies are installed, then run:
+### 1. Running the Server (uv)
 
 ```bash
-python run.py
+uv sync
+```
 
+then
+
+```bash
+uv run toy-mcp
+```
+```bash
 The server will start using stdio transport and can be used with an MCP-compatible client.
 ```
 
 ## Using with Claude Desktop
 
-Alternatively, you can connect ```run.py``` to your Claude Desktop MCP configuration to use the tools directly in chat.
+Alternatively, you can connect ```toy-mcp``` to your Claude Desktop MCP configuration to use the tools directly in chat.
 
 ## Notes
 
