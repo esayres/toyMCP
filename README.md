@@ -45,13 +45,26 @@ then
 ```bash
 uv run toy-mcp
 ```
-```bash
+
 The server will start using stdio transport and can be used with an MCP-compatible client.
-```
+
 
 ## Using with Claude Desktop
 
 Alternatively, you can connect ```toy-mcp``` to your Claude Desktop MCP configuration to use the tools directly in chat.
+
+To connect this MCP server to Claude Desktop in a local development setup, add the following to your `claude_desktop_config.json`:
+
+```json
+{
+  "mcpServers": {
+    "toy-mcp": {
+      "command": "uv",
+      "args": ["run", "--directory", "/home/YOUR_USERNAME/path/to/ToyMCP", "toy-mcp"]
+    }
+  }
+}
+```
 
 ## Notes
 
