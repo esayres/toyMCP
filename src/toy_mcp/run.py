@@ -110,5 +110,10 @@ def get_weather(longitude: float, latitude: float) -> dict:
     return request_weather_data(longitude, latitude) # return the weather data as a dictionary
 
 
-if __name__ == "__main__":
+# uv
+def main():
     mcp.run(transport="stdio")
+
+
+if __name__ == "__main__":
+    main()

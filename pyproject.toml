@@ -1,0 +1,14 @@
+[project]
+name = "toy-mcp"
+version = "0.1.0"
+description = "Toy MCP server with FastMCP tools"
+readme = "README.md"
+requires-python = ">=3.10"
+
+dependencies = [
+    "requests",
+    "fastmcp",  # make sure this is the correct package name for FastMCP
+]
+
+[project.scripts]
+toy-mcp = "toy_mcp.run:main"
